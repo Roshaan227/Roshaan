@@ -1,0 +1,8 @@
+/* Reset and base styles are now handled in our custom CSS files */
+/* This file is kept minimal to avoid conflicts */
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

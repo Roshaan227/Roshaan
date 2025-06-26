@@ -1,0 +1,170 @@
+.theme-switcher {
+  position: relative;
+  display: inline-block;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-light);
+  border-radius: 0.5rem;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px var(--shadow-light);
+}
+
+.theme-toggle:hover {
+  background: var(--bg-secondary);
+  border-color: var(--border-medium);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--shadow-medium);
+}
+
+.theme-icon {
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover .theme-icon {
+  transform: scale(1.1);
+}
+
+.theme-name {
+  font-weight: 600;
+}
+
+.dropdown-arrow {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+  color: var(--text-secondary);
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+.theme-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-light);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 25px var(--shadow-dark);
+  min-width: 160px;
+  z-index: 1000;
+  overflow: hidden;
+  animation: dropdownSlide 0.3s ease;
+}
+
+@keyframes dropdownSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.theme-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.theme-option:hover {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.theme-option.active {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.theme-option.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--theme-color);
+}
+
+.theme-option-icon {
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.theme-option:hover .theme-option-icon {
+  transform: scale(1.1);
+}
+
+.theme-option-name {
+  flex: 1;
+  text-align: left;
+  font-weight: 600;
+}
+
+.theme-option-check {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .theme-toggle {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .theme-name {
+    display: none;
+  }
+
+  .theme-dropdown {
+    right: -0.5rem;
+    min-width: 140px;
+  }
+
+  .theme-option {
+    padding: 0.875rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-toggle {
+    padding: 0.5rem;
+  }
+
+  .theme-icon {
+    font-size: 1rem;
+  }
+
+  .theme-dropdown {
+    right: -1rem;
+    min-width: 120px;
+  }
+} 
