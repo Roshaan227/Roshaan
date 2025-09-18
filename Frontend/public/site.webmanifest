@@ -1,0 +1,21 @@
+{
+  "name": "Professional Portfolio",
+  "short_name": "Portfolio",
+  "description": "Professional portfolio showcasing my work, skills, and projects",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3498db",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+} 

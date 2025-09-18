@@ -2,17 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Professional portfolio showcasing my work, skills, and projects" />
-    <meta name="keywords" content="portfolio, developer, web developer, frontend, react" />
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Your Name - Professional Portfolio | Web Developer & Designer</title>
+    <meta name="title" content="Your Name - Professional Portfolio | Web Developer & Designer" />
+    <meta name="description" content="Professional portfolio of Your Name, a skilled web developer and designer. View my projects, skills, and experience in modern web technologies." />
+    <meta name="keywords" content="web developer, frontend developer, react developer, portfolio, web design, JavaScript, CSS, HTML, Your Name" />
     <meta name="author" content="Your Name" />
-    <meta property="og:title" content="Portfolio - Your Name" />
-    <meta property="og:description" content="Professional portfolio showcasing my work, skills, and projects" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://your-portfolio.netlify.app" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <title>Portfolio - Your Name</title>
+    <meta property="og:url" content="https://your-portfolio.netlify.app/" />
+    <meta property="og:title" content="Your Name - Professional Portfolio | Web Developer & Designer" />
+    <meta property="og:description" content="Professional portfolio of Your Name, a skilled web developer and designer. View my projects, skills, and experience in modern web technologies." />
+    <meta property="og:image" content="https://your-portfolio.netlify.app/og-image.jpg" />
+    <meta property="og:site_name" content="Your Name Portfolio" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://your-portfolio.netlify.app/" />
+    <meta property="twitter:title" content="Your Name - Professional Portfolio | Web Developer & Designer" />
+    <meta property="twitter:description" content="Professional portfolio of Your Name, a skilled web developer and designer. View my projects, skills, and experience in modern web technologies." />
+    <meta property="twitter:image" content="https://your-portfolio.netlify.app/og-image.jpg" />
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#3498db" />
+    <meta name="msapplication-TileColor" content="#3498db" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Your Name",
+      "jobTitle": "Web Developer",
+      "url": "https://your-portfolio.netlify.app/",
+      "sameAs": [
+        "https://github.com/yourusername",
+        "https://linkedin.com/in/yourusername"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      }
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

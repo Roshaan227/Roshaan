@@ -100,10 +100,11 @@ const Skills = () => {
           <div className="skills-cta">
             <div className="cta-content">
               <h3>Ready to Work Together?</h3>
-              <p>
-                I'm always excited to take on new challenges and collaborate on 
-                interesting projects. Let's discuss how we can work together!
-              </p>
+              <p style={{ color: 'white' }}>
+  I'm always excited to take on new challenges and collaborate on 
+  interesting projects. Let's discuss how we can work together!
+</p>
+
               <a href="#contact" className="btn btn-primary btn-lg">
                 Start a Project
               </a>

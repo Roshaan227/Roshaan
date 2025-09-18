@@ -41,8 +41,8 @@ const Contact = () => {
     {
       icon: '📧',
       title: 'Email',
-      value: 'roshaan.haider@example.com',
-      link: 'mailto:roshaan.haider@example.com'
+      value: 'roshaanh14@gmail.com',
+      link: 'mailto:roshaanh14@gmail.com'
     },
     {
       icon: '📱',
@@ -59,8 +59,8 @@ const Contact = () => {
     {
       icon: '💼',
       title: 'LinkedIn',
-      value: 'linkedin.com/in/roshaanhaider',
-      link: 'https://linkedin.com/in/roshaanhaider'
+      value: 'Roshaan Haider',
+      link: 'www.linkedin.com/in/roshaan-haider-301174316'
     }
   ];
 
